@@ -1,0 +1,29 @@
+Projeto
+
+Previsão de Estoque Inteligente na AWS com Sagemaker Canvas
+
+Objetivo
+
+Desenvolver um modelo de previsão de estoque utilizando o SageMaker Canvas e documentar o processo em um repositório no GitHub.
+
+Introdução
+
+O Amazon SageMaker Canvas facilita na criação e implementação de modelos de Machine Learning sem a necessidade de escrever linhas de código através de uma interface amigável e possibilitando automatizar tarefas complexas.
+
+Passo a Passo
+
+1. Criar um modelo customizado de Machine Learning
+2. Selecionar Criar novo modelo
+3. Escolher o tipo de modelo de análise preditiva
+4. Selecionar Criar novo dataset
+5. Selecionar e fazer upload do arquivo do dataset disponibilizado pela DIO
+6. Configurar as variáveis de entrada e saída de dados
+7. Selecionar a opção de construção. No SageMaker Canvas temos duas opções de construção, a rápida e a padrão. A diferença entre elas é o tempo que leva para ficar pronto (rápida, entre 2 a 15 minutos e padrão, entre 2 a 4 horas) e a precisão dos dados do seu modelo.
+8. Depois de treinar o modelo, que é considerado o passo mais importante, o próximo passo é a de análise.
+9. No status do modelo, há as métricas RMSE (Root Mean Squared Error) e MSE (Mean Squared Error), que são usadas para avaliar o desempenho de modelos de regressão em análise de dados e Machine Learning. Ambas ajudam a medir a precisão das previsões do modelo em relação aos valores reais.
+O MSE é a média dos quadrados das diferenças entre os valores previstos e os valores reais e é usado para quantificar a quantidade de erro em um modelo de regressão. Menores valores de MSE indicam um modelo com melhores previsões.
+O RMSE é a raiz quadrada do MSE. Ele fornece uma medida do erro em unidades diretamente comparáveis as dos dados originais. É frequentemente utilizado em conjunto com o MSE para obter uma compreensão mais completa do desempenho do modelo e é especialmente útil quando você precisa interpretar a magnitude do erro em termos das unidades dos dados originais.
+10. Predição. Têm-se dois modelos de predição, Batch e Single.
+Bacth prediction - adiciona outro dataset manualmente e, após executá-lo, compara os dois datasets e é possível observar se o modelo vai se sair bem e da forma que é esperada com dados diferentes.
+Single prediction - seleciona apenas uma previsão de um dado isolado.
+Após escolher o modelo de predição, basta analisar as previsões geradas, com possibilidade de exportar seus resultados e concluir suas análises.
